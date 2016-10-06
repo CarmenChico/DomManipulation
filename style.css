@@ -1,0 +1,29 @@
+#answer {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#calculate-button {
+  background: green;
+  width: 100px;
+  height: 40px;
+  border: 1px solid lightgreen;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.answer {
+  color: grey;
+  font-size: 25px;
+}
+
+h1 {
+  align-content: center;
+}
+
+body {
+  text-align: center;;
+}

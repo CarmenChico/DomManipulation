@@ -1,16 +1,20 @@
- var resultsbox= document.getElementById("answer");
+
+var sumImports = function () {
+    var input1= document.getElementById("value-one");
+    var input2= document.getElementById("value-two");
+    var sum = Number (input1.value) + Number (input2.value);
+
+    return sum;
+};
 
 
-    var value-one,value-two, answer;
-    function setValues()
-    {
-      value-one = number (document.getElementById(value-one).value);
-      value-two =number (document.getElementById(value-two).value);
-    }
+var getAnswer = function (event) {
+    event.preventDefault ();
+    var answer = sumImports ();
+    var resultsbox= document.getElementById("answer");
+    resultsbox.textContent = answer;
+ };
 
-}
-function calculate-button() {
-    resultsbox.innerHTML = "";
-    answer = value-one + value-two;
-    alert ("the sum is equals to the"+ answer);
-}
+
+var button = document.getElementById ("calculate-button");
+    button.addEventListener("click", getAnswer);
